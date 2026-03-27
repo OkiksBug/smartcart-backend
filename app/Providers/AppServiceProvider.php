@@ -29,7 +29,9 @@ class AppServiceProvider extends ServiceProvider
             \URL::forceScheme('https');
         }
 
-        // Share small notifications payload for admin (recent pending orders)
+        // NOTE: Disabled notifications during bootstrap to prevent DB timeout issues
+        // Re-enable after database migrations complete
+        /*
         if (class_exists(Inertia::class)) {
             Inertia::share('notifications', function () {
                 try {
@@ -114,5 +116,6 @@ class AppServiceProvider extends ServiceProvider
                 }
             });
         }
+        */
     }
 }
