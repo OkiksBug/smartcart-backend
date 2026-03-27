@@ -24,6 +24,11 @@ class AppServiceProvider extends ServiceProvider
      */
     public function boot(): void
     {
+        // Force HTTPS in production
+        if (config('app.env') === 'production') {
+            \URL::forceScheme('https');
+        }
+
         // Share small notifications payload for admin (recent pending orders)
         if (class_exists(Inertia::class)) {
             Inertia::share('notifications', function () {
