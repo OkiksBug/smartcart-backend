@@ -8,6 +8,11 @@ use App\Http\Controllers\Admin\CategoryController;
 use App\Http\Controllers\Admin\OrderController;
 use App\Http\Controllers\Admin\UserController;
 
+// Root route - redirect to admin login
+Route::get('/', function () {
+    return redirect('/admin/login');
+});
+
 // Default login route
 Route::redirect('/login', '/admin/login')->name('login');
 
