@@ -2,7 +2,7 @@ import React, { useState } from 'react';
 import { useForm, usePage } from '@inertiajs/inertia-react';
 import { Inertia } from '@inertiajs/inertia';
 import AdminLayout from '../AdminLayout';
-import ProfileSettingsForm from '../../Components/Admin/ProfileSettingsForm';
+import ProfileSettingsForm from '../../Components/admin/ProfileSettingsForm';
 import axios from 'axios';
 
 export default function Adminsettings() {
