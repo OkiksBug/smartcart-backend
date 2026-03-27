@@ -26,6 +26,22 @@ Route::get('/ping', function () {
     return response()->json(['ok' => true]);
 });
 
+// Database connectivity test (temporary - remove after diagnosis)
+Route::get('/db-test', function () {
+    try {
+        \DB::connection()->getPdo();
+        return response()->json(['status' => 'success', 'message' => 'Database connection OK']);
+    } catch (\Exception $e) {
+        return response()->json([
+            'status' => 'error',
+            'message' => $e->getMessage(),
+            'db_host' => config('database.connections.mysql.host'),
+            'db_port' => config('database.connections.mysql.port'),
+            'db_database' => config('database.connections.mysql.database'),
+        ], 500);
+    }
+});
+
 // Public routes
 use App\Http\Controllers\Api\AuthController;
 
