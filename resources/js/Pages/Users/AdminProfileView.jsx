@@ -1,7 +1,7 @@
 import React from 'react';
 import AdminLayout from '../AdminLayout';
 import { Button } from '../../Components/common';
-import { Link } from '@inertiajs/inertia-react';
+import { Link } from '@inertiajs/react';
 
 function initial(name) {
   if (!name) return 'A';

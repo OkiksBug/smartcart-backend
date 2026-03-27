@@ -1,5 +1,5 @@
 import React, { useState } from 'react';
-import { usePage } from '@inertiajs/inertia-react';
+import { usePage } from '@inertiajs/react';
 import { Inertia } from '@inertiajs/inertia';
 import { Button } from '../../Components/common';
 import NotificationModal from '../../Components/common/NotificationModal';

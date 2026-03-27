@@ -1,5 +1,5 @@
 import React, { useState } from 'react';
-import { useForm, usePage } from '@inertiajs/inertia-react';
+import { useForm, usePage } from '@inertiajs/react';
 import { Inertia } from '@inertiajs/inertia';
 import AdminLayout from '../AdminLayout';
 import ProfileSettingsForm from '../../Components/admin/ProfileSettingsForm';

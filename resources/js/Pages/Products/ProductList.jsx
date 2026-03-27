@@ -1,5 +1,5 @@
 import React, { useState } from 'react';
-import { Link } from '@inertiajs/inertia-react';
+import { Link } from '@inertiajs/react';
 import AdminLayout from '../AdminLayout';
 import { ConfirmModal, NotificationModal, PageHeader, Button } from '../../Components/common';
 

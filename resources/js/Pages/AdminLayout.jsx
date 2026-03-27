@@ -1,6 +1,6 @@
 import React, { useState, useEffect } from 'react';
 import { Inertia } from '@inertiajs/inertia';
-import { Link, usePage } from '@inertiajs/inertia-react';
+import { Link, usePage } from '@inertiajs/react';
 import NotificationsListModal from '../Components/common/NotificationsListModal';
 import { Button } from '../Components/common';
 import axios from 'axios';

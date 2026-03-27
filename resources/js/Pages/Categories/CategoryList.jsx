@@ -1,5 +1,5 @@
 import React from 'react';
-import { usePage } from '@inertiajs/inertia-react';
+import { usePage } from '@inertiajs/react';
 import { Inertia } from '@inertiajs/inertia';
 import AdminLayout from '../AdminLayout';
 import { PageHeader, Button } from '../../Components/common';

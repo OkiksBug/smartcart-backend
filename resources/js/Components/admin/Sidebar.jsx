@@ -1,5 +1,5 @@
 import React from 'react';
-import { Link, usePage } from '@inertiajs/inertia-react';
+import { Link, usePage } from '@inertiajs/react';
 
 export default function Sidebar() {
   const { auth, currentRoute } = usePage().props;

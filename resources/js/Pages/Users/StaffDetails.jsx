@@ -1,7 +1,7 @@
 import React from 'react';
 import AdminLayout from '../AdminLayout';
 import { PageHeader } from '../../Components/common';
-import { usePage } from '@inertiajs/inertia-react';
+import { usePage } from '@inertiajs/react';
 
 export default function StaffDetails() {
   const { user } = usePage().props;
